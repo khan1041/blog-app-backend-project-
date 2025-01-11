@@ -45,7 +45,7 @@ export const blogstart=async(req,res)=>{
             adminName,
             adminPhoto,
              createdby:createdBy,
-            blogImage:cloudinaryResponse.url, 
+            blogImage:cloudinaryResponse.secure_url, 
             
             
           }
