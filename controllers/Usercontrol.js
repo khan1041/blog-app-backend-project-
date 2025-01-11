@@ -58,8 +58,7 @@ try {
         username,
         password: hashedPassword,
         role,
-        photo:cloudinaryResponse.url,
-        
+        photo:cloudinaryResponse.secure_url,        
       });
      const userreg= await newUser.save();
      return res.status(201).json({msg:"completed"})
