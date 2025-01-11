@@ -45,8 +45,8 @@ export const blogstart=async(req,res)=>{
             adminName,
             adminPhoto,
              createdby:createdBy,
-            blogImage:cloudinaryResponse.secure_url, 
-            
+             blogImage:cloudinaryResponse.secure_url,    
+
             
           }
         console.log(blogData)
@@ -133,8 +133,8 @@ const cloudinaryResponse = await cloudinary.uploader.upload(
 );
 
 if(blogImage){
-  update.blogImage=cloudinaryResponse.url
-  
+    update.blogImage=cloudinaryResponse.secure_url
+
  }
 await update.save()
 return res.status(200).json({msg:"post image update",update})
