@@ -11,7 +11,7 @@ const uri=process.env. mongo_url
 const conectedDb=async ()=>{
 
     try {
-        await mongoose.connect("mongodb+srv://skshimul79977007:tiBPI7LUbBnOwdoE@cluster0.cwfmg5j.mongodb.net/blogapp")
+        await mongoose.connect("mongodb+srv://skshimul79977007:tiBPI7LUbBnOwdoE@cluster0.cwfmg5j.mongodb.net/jobportal2")
         console.log("conceted done to db")
     } catch (error) {
         console.error("database connected faill")
